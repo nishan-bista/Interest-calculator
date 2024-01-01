@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 500px;
+  height: 500px;
+  width: 450px;
+  background-color: #635985;
+  font-size: 1.5rem;
+  color: #ffffe8;
+}
+.panel-one {
+  height: 3.5rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff2f2;
+  font-style: italic;
+}
+
+/* .main {
+} */
+label {
+  padding-left: 2rem;
+}
+
+input {
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  height: 2rem;
+  width: 60%;
+}
+
+.interest-part {
+  height: 3rem;
+  border-bottom: 2px solid beige;
+  display: flex;
+  align-items: center;
+}
+
+.rate-part {
+  height: 3rem;
+  border-bottom: 2px solid beige;
+  display: flex;
+  align-items: center;
+}
+.time-part {
+  height: 3rem;
+  border-bottom: 2px solid beige;
+  display: flex;
+  align-items: center;
+}
+.submit-part {
+  height: 3rem;
+  border-bottom: 2px solid beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-part button {
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 2rem;
+  border: none;
+}
+.output {
+  height: 3rem;
+}
+/* margins for all inputs  */
+.interest-part input {
+  text-align: center;
+  margin-left: 0.75rem;
+}
+
+.rate-part input {
+  text-align: center;
+  margin-left: 2.4rem;
+}
+.time-part input {
+  text-align: center;
+  margin-left: 2rem;
+}
