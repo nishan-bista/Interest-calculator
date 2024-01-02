@@ -30,11 +30,17 @@ body {
 
 /* .main {
 } */
-label {
+
+.amount-part label,
+.rate-part label,
+.time-part label,
+.output label {
   padding-left: 2rem;
 }
 
-input {
+.amount-part input,
+.rate-part input,
+.time-part input {
   border-radius: 10px;
   outline: none;
   border: none;
@@ -44,33 +50,35 @@ input {
 
 .amount-part {
   height: 3rem;
-  
+
   display: flex;
   align-items: center;
 }
 
 .rate-part {
   height: 3rem;
-  
+
   display: flex;
   align-items: center;
 }
 .time-part {
   height: 3rem;
-  
+
   display: flex;
   align-items: center;
 }
+
 .submit-part {
   height: 3rem;
-  border-top:2px solid beige ;
+  border-top: 2px solid beige;
   border-bottom: 2px solid beige;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.submit-part button:hover{
-  background-color: rgb(237, 255, 159);
+.submit-part button:hover {
+  background-color: #ff4343;
+  color: white;
 }
 .submit-part button {
   height: 2.5rem;
@@ -81,6 +89,20 @@ input {
 .output {
   height: 3rem;
 }
+
+/* Interest options styling */
+
+.options-part {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid white;
+  height: 3.5rem;
+  width: 100%;
+}
+
 /* margins for all inputs  */
 .amount-part input {
   text-align: center;
