@@ -10,12 +10,13 @@ body {
   align-items: center;
 }
 .container {
+  border-radius:10% ;
   max-width: 500px;
   height: 500px;
   width: 450px;
-  background-color: #635985;
+  background-color: #3D3B40;
   font-size: 1.5rem;
-  color: #ffffe8;
+  color: #BFCFE7;
 }
 .panel-one {
   height: 3.5rem;
@@ -50,20 +51,17 @@ body {
 
 .amount-part {
   height: 3rem;
-
   display: flex;
   align-items: center;
 }
 
 .rate-part {
   height: 3rem;
-
   display: flex;
   align-items: center;
 }
 .time-part {
   height: 3rem;
-
   display: flex;
   align-items: center;
 }
@@ -76,15 +74,36 @@ body {
   justify-content: center;
   align-items: center;
 }
-.submit-part button:hover {
-  background-color: #ff4343;
-  color: white;
-}
-.submit-part button {
-  height: 2.5rem;
+
+button {
   width: 6rem;
-  border-radius: 2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 0.8rem;
   border: none;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+}
+
+button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+button:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  transition: 0.5s;
 }
 .output {
   height: 3rem;
@@ -115,5 +134,5 @@ body {
 }
 .time-part input {
   text-align: center;
-  margin-left: 2rem;
+  margin-left: 1.8rem;
 }
